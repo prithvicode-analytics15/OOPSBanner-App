@@ -1,0 +1,75 @@
+/**
+ * OOPSBannerApp
+ *
+ * UC1: Print the literal text "OOPS"
+ * UC2: Print OOPS banner using direct print statements
+ * UC3: Refactor banner using String.join() for better memory efficiency
+ *
+ * Demonstrates basic Java syntax, console output, and String.join().
+ *
+ * @author YourName
+ * @version 1.0
+ */
+
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        // =========================
+        // UC1: Simple text output
+        // =========================
+        System.out.println("UC1 Output:");
+        System.out.println("OOPS");
+        System.out.println();
+
+
+        // =========================
+        // UC2: ASCII Banner (Hardcoded)
+        // =========================
+        System.out.println("UC2 Output:");
+
+        System.out.println(" *****    *****    ******    ***** ");
+        System.out.println("*     *  *     *   *     *  *     *");
+        System.out.println("*     *  *     *   *     *  *      ");
+        System.out.println("*     *  *     *   ******    ***** ");
+        System.out.println("*     *  *     *   *              *");
+        System.out.println("*     *  *     *   *        *     *");
+        System.out.println(" *****    *****    *         ***** ");
+        System.out.println();
+
+
+        // =========================
+        // UC3: Banner using String.join()
+        // =========================
+        System.out.println("UC3 Output:");
+
+        String line1 = String.join("",
+                " ***** ", "   ", " ***** ", "   ", " ****** ", "   ", " ***** ");
+
+        String line2 = String.join("",
+                "*     *", "  ", "*     *", "   ", "*     *", "  ", "*     *");
+
+        String line3 = String.join("",
+                "*     *", "  ", "*     *", "   ", "*     *", "  ", "*      ");
+
+        String line4 = String.join("",
+                "*     *", "  ", "*     *", "   ", "****** ", "   ", " ***** ");
+
+        String line5 = String.join("",
+                "*     *", "  ", "*     *", "   ", "*      ", "        ", "*");
+
+        String line6 = String.join("",
+                "*     *", "  ", "*     *", "   ", "*      ", "   ", "*     *");
+
+        String line7 = String.join("",
+                " ***** ", "   ", " ***** ", "   ", "*      ", "   ", " ***** ");
+
+        System.out.println(line1);
+        System.out.println(line2);
+        System.out.println(line3);
+        System.out.println(line4);
+        System.out.println(line5);
+        System.out.println(line6);
+        System.out.println(line7);
+    }
+}
