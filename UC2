@@ -1,0 +1,39 @@
+/**
+ * OOPSBannerApp
+ *
+ * UC1: Print the literal text "OOPS"
+ * UC2: Display "OOPS" as a 7-line ASCII banner using '*' characters
+ *
+ * This program demonstrates basic Java syntax,
+ * the main method, and console output.
+ *
+ * @author YourName
+ * @version 1.0
+ */
+
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        // =========================
+        // UC1: Print simple text
+        // =========================
+        System.out.println("UC1 Output:");
+        System.out.println("OOPS");
+        System.out.println();
+
+
+        // =========================
+        // UC2: Print ASCII Banner
+        // =========================
+        System.out.println("UC2 Output:");
+
+        System.out.println(" *****    *****    ******    ***** ");
+        System.out.println("*     *  *     *   *     *  *     *");
+        System.out.println("*     *  *     *   *     *  *      ");
+        System.out.println("*     *  *     *   ******    ***** ");
+        System.out.println("*     *  *     *   *              *");
+        System.out.println("*     *  *     *   *        *     *");
+        System.out.println(" *****    *****    *         ***** ");
+    }
+}
