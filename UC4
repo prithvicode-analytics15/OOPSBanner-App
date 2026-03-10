@@ -1,0 +1,86 @@
+/**
+ * OOPSBannerApp
+ *
+ * UC1: Print the literal text "OOPS"
+ * UC2: Display OOPS banner using individual print statements
+ * UC3: Refactor banner using String.join()
+ * UC4: Store banner lines in a String array and print using a loop
+ *
+ * Demonstrates arrays, loops, and improved modularity.
+ *
+ * @author YourName
+ * @version 1.0
+ */
+
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        // ======================
+        // UC1
+        // ======================
+        System.out.println("UC1 Output:");
+        System.out.println("OOPS");
+        System.out.println();
+
+
+        // ======================
+        // UC2
+        // ======================
+        System.out.println("UC2 Output:");
+
+        System.out.println(" *****    *****    ******    ***** ");
+        System.out.println("*     *  *     *   *     *  *     *");
+        System.out.println("*     *  *     *   *     *  *      ");
+        System.out.println("*     *  *     *   ******    ***** ");
+        System.out.println("*     *  *     *   *              *");
+        System.out.println("*     *  *     *   *        *     *");
+        System.out.println(" *****    *****    *         ***** ");
+        System.out.println();
+
+
+        // ======================
+        // UC3
+        // ======================
+        System.out.println("UC3 Output:");
+
+        String line1 = String.join("", " ***** ", "   ", " ***** ", "   ", " ****** ", "   ", " ***** ");
+        String line2 = String.join("", "*     *", "  ", "*     *", "   ", "*     *", "  ", "*     *");
+        String line3 = String.join("", "*     *", "  ", "*     *", "   ", "*     *", "  ", "*      ");
+        String line4 = String.join("", "*     *", "  ", "*     *", "   ", "****** ", "   ", " ***** ");
+        String line5 = String.join("", "*     *", "  ", "*     *", "   ", "*      ", "      ", "*");
+        String line6 = String.join("", "*     *", "  ", "*     *", "   ", "*      ", "   ", "*     *");
+        String line7 = String.join("", " ***** ", "   ", " ***** ", "   ", "*      ", "   ", " ***** ");
+
+        System.out.println(line1);
+        System.out.println(line2);
+        System.out.println(line3);
+        System.out.println(line4);
+        System.out.println(line5);
+        System.out.println(line6);
+        System.out.println(line7);
+
+        System.out.println();
+
+
+        // ======================
+        // UC4
+        // ======================
+        System.out.println("UC4 Output:");
+
+        String[] banner = {
+            String.join("", " ***** ", "   ", " ***** ", "   ", " ****** ", "   ", " ***** "),
+            String.join("", "*     *", "  ", "*     *", "   ", "*     *", "  ", "*     *"),
+            String.join("", "*     *", "  ", "*     *", "   ", "*     *", "  ", "*      "),
+            String.join("", "*     *", "  ", "*     *", "   ", "****** ", "   ", " ***** "),
+            String.join("", "*     *", "  ", "*     *", "   ", "*      ", "      ", "*"),
+            String.join("", "*     *", "  ", "*     *", "   ", "*      ", "   ", "*     *"),
+            String.join("", " ***** ", "   ", " ***** ", "   ", "*      ", "   ", " ***** ")
+        };
+
+        // Enhanced for-loop
+        for (String line : banner) {
+            System.out.println(line);
+        }
+    }
+}
